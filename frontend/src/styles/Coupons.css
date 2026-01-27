@@ -1,0 +1,110 @@
+/* =============================
+   Main Coupon Section
+============================= */
+#main-coupon-section {
+  background-color: white;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  height: calc(100vh - 112px);
+  gap: 12rem;
+}
+
+/* Sticky Search Container */
+.search-coupon-container {
+  display: flex;
+  justify-content: center;
+
+  z-index: 999;
+  width: 100%;
+}
+
+/* Form inside search */
+#main-coupon-section form {
+  margin-top: 3rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+/* =============================
+   Search Box
+============================= */
+.search-container {
+  display: flex;
+  width: 90%;
+  max-width: 700px;
+  border-radius: 1rem;
+  overflow: hidden; /* ensures rounded edges for both input + icon */
+  background-color: white;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.search-container input {
+  flex: 9; /* 90% */
+  border: none;
+  padding: 1rem;
+  font-size: 1.2rem;
+  outline: none;
+  background: transparent;
+  color: black;
+}
+
+.search-container input::placeholder {
+  color: #555;
+  font-size: 1rem;
+}
+
+/* Icon (10%) */
+.search-icon {
+  flex: 1; /* 10% */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #d4af37; /* nice blue */
+  color: white;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.search-icon:hover {
+  background-color: gray;
+}
+
+/* =============================
+   Title
+============================= */
+#main-coupon-section h1 {
+  margin: 0;
+  font-size: clamp(2.5rem, 6vw, 7rem); /* responsive */
+  color: whitesmoke;
+  text-align: center;
+}
+
+/* =============================
+   Coupons Section
+============================= */
+#coupons-section {
+  min-height: calc(100vh - 112px);
+  height: auto;
+}
+
+.sections-coupons {
+  background: linear-gradient(180deg, #111, #222);
+  min-height: calc(100vh - 112px);
+  padding: 4rem 2rem;
+  color: #fff;
+}
+
+.sections-coupons h2 {
+  margin: 0 0 2rem 0;
+  font-size: 2rem;
+  color: #d4af37;
+  text-align: center;
+}
+
+.coupons-blog-container {
+  display: flex;
+  flex-wrap: wrap;
+}

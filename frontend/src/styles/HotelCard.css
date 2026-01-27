@@ -1,0 +1,140 @@
+.hotel-card {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  margin-bottom: 1rem;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.hotel-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+}
+
+.hotel-card-image img {
+  width: 150px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.hotel-card-details {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.hotel-card-details h3 {
+  margin: 0 0 0.25rem 0;
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.hotel-card-details p {
+  margin: 0.2rem 0;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.remove-btn {
+  margin-top: 0.5rem;
+  align-self: flex-start;
+  background-color: #ff4d4f;
+  color: #fff;
+  border: none;
+  padding: 0.35rem 0.8rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.85rem;
+  transition: background-color 0.2s ease;
+}
+
+.remove-btn:hover {
+  background-color: #d9363e;
+}
+
+@media (max-width: 768px) {
+  .hotel-card {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hotel-card-image img {
+    width: 100%;
+    height: 200px;
+  }
+
+  .hotel-card-details {
+    align-items: center;
+    text-align: center;
+  }
+
+  .remove-btn {
+    align-self: center;
+  }
+}
+
+.hotel-card-actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.invoice-btn {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.invoice-btn:hover {
+  background-color: #43a047;
+}
+
+.invoice-btn {
+  background: linear-gradient(135deg, #2b6cb0, #3182ce);
+  color: white;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+}
+
+.invoice-btn:hover {
+  background: linear-gradient(135deg, #4299e1, #2b6cb0);
+  transform: scale(1.05);
+}
+
+.hotel-card-actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 12px;
+}
+
+.remove-btn {
+  background: #ff4c4c;
+  color: white;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 0.9rem;
+  transition: 0.3s;
+}
+
+.remove-btn:hover {
+  background: #ff2e2e;
+  transform: scale(1.05);
+}

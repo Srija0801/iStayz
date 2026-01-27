@@ -1,0 +1,163 @@
+/* --- General --- */
+.admin-dashboard-container {
+  font-family: Arial, sans-serif;
+  padding: 2rem;
+  color: #222;
+}
+
+.dashboard-title {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+}
+
+.tabs {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.tabs button {
+  padding: 0.75rem 1.5rem;
+  border: none;
+  background-color: #eee;
+  cursor: pointer;
+  font-size: 1rem;
+  border-radius: 6px;
+  transition: background 0.3s;
+}
+
+.tabs button:hover,
+.tabs button:focus {
+  background-color: #d4af37;
+  color: white;
+}
+
+.loading,
+.error {
+  text-align: center;
+  font-size: 1.5rem;
+  margin-top: 2rem;
+}
+
+/* --- Stats Grid --- */
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.stat-card {
+  background-color: #fff8f0;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.stat-card h3 {
+  margin-bottom: 0.5rem;
+}
+
+.stat-card p {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.stat-card span {
+  font-size: 0.9rem;
+  color: #555;
+}
+
+/* --- Tables --- */
+.admin-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 2rem;
+}
+
+.admin-table th,
+.admin-table td {
+  padding: 0.75rem 1rem;
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+.admin-table th {
+  background-color: #222;
+  color: white;
+}
+
+.admin-table tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.admin-table button {
+  padding: 0.5rem 1rem;
+  margin-right: 0.5rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  background-color: #222;
+  color: white;
+  transition: 0.3s;
+}
+
+.admin-table button:hover {
+  background-color: #d4af37;
+  color: #222;
+}
+
+/* --- Coupon Form --- */
+.coupon-form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+  background-color: #f4f4f4;
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+.coupon-form input,
+.coupon-form select {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  flex: 1 1 200px;
+}
+
+.coupon-form button {
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 6px;
+  background-color: #222;
+  color: white;
+  cursor: pointer;
+  flex: 1 1 150px;
+  transition: 0.3s;
+}
+
+.coupon-form button:hover {
+  background-color: #d4af37;
+  color: #222;
+}
+
+/* --- Responsive --- */
+@media (max-width: 768px) {
+  .stats-grid {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  }
+
+  .coupon-form {
+    flex-direction: column;
+  }
+
+  .admin-table th,
+  .admin-table td {
+    font-size: 0.9rem;
+  }
+}

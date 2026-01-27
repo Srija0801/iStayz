@@ -1,0 +1,74 @@
+#Review-title {
+  margin: 0;
+  text-align: center;
+  font-size: 3rem;
+  padding: 1rem 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.review-blog-container {
+  margin-top: 1rem;
+  margin-left: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.review-card {
+  opacity: 0; /* start hidden */
+  transform: translateY(30px);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin: 1%;
+  height: 180px;
+  width: 400px;
+  border-radius: 0.8rem;
+  padding: 1rem 1rem;
+  background-color: rgba(255, 255, 255, 0.5);
+  filter: drop-shadow(0 4px 12px rgba(255, 255, 255, 0.4));
+}
+
+.review-card:hover {
+  background-color: #d4af37;
+  transform: scale(2);
+}
+
+.Customer-review h2 {
+  color: black;
+  text-align: center;
+  font-size: 1.3rem;
+  font-style: italic;
+  margin-bottom: 2rem;
+}
+
+.Customer-profile {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  padding: 1rem 1rem;
+  gap: 1.2rem;
+}
+
+.Customer-profile-picture img {
+  border-radius: 50%;
+  height: 50px;
+}
+
+.Customer-details {
+  color: black;
+  position: relative;
+  top: -2px;
+}
+
+.ratings {
+  display: flex;
+  gap: 0.2rem;
+  margin-top: 0.3rem;
+}
+
+/* Filled and empty stars */
+.filled-star {
+  color: #ffd700; /* gold */
+}
+
+.empty-star {
+  color: #ccc; /* gray */
+}

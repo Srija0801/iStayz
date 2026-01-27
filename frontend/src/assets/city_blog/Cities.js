@@ -1,0 +1,17 @@
+export const indianCities = [
+  { id: 1, name: "Mumbai" },
+  { id: 2, name: "Delhi" },
+  { id: 3, name: "Bangalore" },
+  { id: 4, name: "Hyderabad" },
+  { id: 5, name: "Chennai" },
+  { id: 6, name: "Kolkata" },
+  { id: 7, name: "Pune" },
+  { id: 8, name: "Jaipur" },
+  { id: 9, name: "Ahmedabad" },
+  { id: 10, name: "Lucknow" },
+  { id: 11, name: "Bhopal" },
+  { id: 12, name: "Indore" },
+  { id: 13, name: "Goa" },
+  { id: 14, name: "Coimbatore" },
+  { id: 15, name: "Varanasi" },
+];

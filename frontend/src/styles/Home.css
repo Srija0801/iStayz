@@ -1,0 +1,193 @@
+/* Reset and basic styling */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+section:not(.Toastify) {
+  margin: 0;
+  min-height: calc(100vh); /* navbar height */
+  position: relative; /* needed for overlay pseudo-element */
+}
+
+/* Section with background image and overlay */
+#main-location-search {
+  position: relative;
+  min-height: 100vh;
+  background-image: url("../assets/logo.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* Overlay only on background image */
+#main-location-search::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.45); /* semi-transparent black */
+  z-index: 0; /* behind content */
+}
+
+/* Main landing section containing logo and form */
+.main-landing-section {
+  position: relative; /* above overlay */
+  z-index: 1;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+  padding: 4rem 3.3rem;
+  flex-wrap: wrap;
+}
+
+/* Logo container */
+.Logo-container {
+  flex: 1;
+  perspective: 1000px;
+}
+
+.Logo-container h1 {
+  margin-left: 2rem;
+  flex-basis: 40%;
+  font-size: 9rem;
+  position: relative;
+  top: -1rem;
+  left: 4rem;
+  color: white; /* visible over overlay */
+  filter: drop-shadow(0 4px 12px rgba(0, 0, 0, 0.8));
+  display: inline-block;
+}
+
+/* Form container */
+.Search-container {
+  flex-basis: 40%;
+  background-color: rgba(255, 255, 255, 1);
+  height: 550px;
+  filter: drop-shadow(0 4px 12px rgba(255, 255, 255, 1));
+  border-radius: 8px;
+  position: relative;
+  left: -2rem;
+  z-index: 1; /* above overlay */
+}
+
+/* Form styling */
+.Search-container form {
+  font-size: 1.2rem;
+  height: 100%;
+  display: flex;
+  justify-content: start;
+  padding: 1rem 1.8rem 1.8rem 1.8rem;
+  flex-direction: column;
+  gap: 1.4rem;
+}
+
+.Search-container form h2 {
+  margin-top: 2rem;
+}
+
+.Search-container form label {
+  display: flex;
+  flex-direction: column;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.Search-container form input {
+  margin-top: 0.4rem;
+  height: 30px;
+  border: none;
+  border-bottom: 2px solid #d4af37;
+  outline: none;
+}
+
+.check-in-out-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.check-in-out-container input {
+  margin-top: 0.5rem;
+  width: 14rem;
+}
+
+.Search-container form button {
+  color: white;
+  background-color: rgba(0, 0, 0);
+  transition: all 0.1s ease-in-out;
+}
+
+.Search-container form button:hover {
+  background-color: #d4af37;
+  cursor: pointer;
+  color: black;
+}
+
+.Search-container form h2 span {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: #d4af37;
+}
+
+/* Site reviews section */
+#Site-reviews {
+  background-color: black;
+  color: white;
+}
+
+.review-submit {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 1rem;
+}
+.review-submit button {
+  background-color: white;
+}
+
+.review-submit button:hover {
+  background-color: #d4af37;
+}
+
+#city-blog-section {
+  background-color: black;
+}
+
+.city-blog {
+  margin: 2%;
+  height: 250px;
+  width: 400px;
+  border-radius: 1rem;
+  overflow: hidden;
+  filter: drop-shadow(0 4px 12px rgba(255, 255, 255, 0.2));
+}
+.city-blog-container {
+  margin-left: 3rem;
+  display: flex;
+  flex-wrap: wrap;
+}
+.city-blog-container img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.city-heading-container h1 {
+  text-align: center;
+  margin: 0;
+  color: #d4af37;
+  padding-top: 4rem;
+  margin-bottom: 2rem;
+  font-size: 4rem;
+}
+
+.city-blog h3 {
+  text-align: center;
+  position: relative;
+  top: -6rem;
+
+  color: white;
+}

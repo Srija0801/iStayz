@@ -1,0 +1,227 @@
+.Main-search-asise-container {
+  display: flex;
+  width: 100%;
+  min-height: calc(100vh - 112px); /* full screen minus navbar */
+  font-family: Arial, sans-serif;
+}
+
+/* Location / main content */
+.location-search-container {
+  flex-basis: 80%;
+  box-sizing: border-box;
+}
+
+/* Hotels container */
+.hotels-blog-container {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 2rem 0 2rem 2rem;
+}
+
+/* Selected location card */
+.selected-loaction-container {
+  margin-top: 2rem;
+  cursor: pointer;
+  background: white;
+  border: 2px solid #ddd;
+  border-radius: 12px;
+  padding: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 1000px;
+  position: relative;
+  left: 1rem;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.selected-loaction-container:hover {
+  background: #f1f1f1;
+  transform: translateY(-2px);
+}
+
+.selected-loaction-container .destination {
+  font-size: 1.1rem;
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+}
+
+.selected-loaction-container .dates-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  font-size: 0.9rem;
+}
+
+.selected-loaction-container .count {
+  font-size: 1rem;
+  font-weight: bold;
+  background: #d4af37;
+  color: #fff;
+  padding: 0.4rem 0.8rem;
+  border-radius: 8px;
+}
+
+/* Form wrapper */
+.form-wrapper-show form {
+  margin-top: 2rem;
+  background: #fff;
+  border: 2px solid #ddd;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  width: 1000px;
+  display: flex;
+  gap: 1.5rem;
+}
+
+/* Inputs */
+.input-container label,
+.date-container label,
+.peopleCount label {
+  display: flex;
+  flex-direction: column;
+  font-weight: bold;
+  font-size: 0.95rem;
+  color: #333;
+}
+
+.form-wrapper-show form input[type="text"],
+.form-wrapper-show form input[type="date"],
+.form-wrapper-show form input[type="number"] {
+  padding: 0.6rem;
+  margin-top: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 0.95rem;
+}
+
+.form-wrapper-show form input:focus {
+  border-color: #d4af37;
+  box-shadow: 0 0 4px rgba(212, 175, 55, 0.5);
+  outline: none;
+}
+
+/* Dates layout */
+.date-container {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.check-in-container,
+.check-out-container {
+  flex: 1;
+}
+
+/* Submit & cancel buttons */
+.submit-container {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+}
+
+.submit-container button {
+  height: 50px;
+  padding: 0.6rem 1.2rem;
+  border-radius: 8px;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.submit-container button[type="button"] {
+  background: #eee;
+  color: #333;
+}
+
+.submit-container button[type="button"]:hover {
+  background: #ddd;
+  transform: translateY(-2px);
+}
+
+.submit-container button[type="submit"] {
+  background: #d4af37;
+  color: white;
+}
+
+.submit-container button[type="submit"]:hover {
+  background: #b8962f;
+  transform: translateY(-2px);
+}
+
+/* Filter sidebar */
+.filter-container {
+  position: sticky; /* fixed when scrolling */
+  top: 150px;
+  margin-left: 2rem;
+  flex-basis: 20%;
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  max-height: calc(100vh - 4rem);
+  overflow-y: auto;
+  font-family: Arial, sans-serif;
+}
+
+/* Filter sections inside sidebar */
+.filter-section {
+  margin-bottom: 2rem;
+  padding: 0 0.5rem;
+}
+
+.filter-section h4 {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 0.8rem;
+  color: #333;
+}
+
+.filter-section label {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.6rem;
+  font-size: 0.9rem;
+  cursor: pointer;
+  color: #555;
+}
+
+.filter-section input[type="checkbox"],
+.filter-section input[type="radio"] {
+  margin-right: 10px;
+  accent-color: #d4af37;
+  width: 16px;
+  height: 16px;
+}
+
+.filter-section input[type="number"],
+.filter-section input[type="range"] {
+  width: 100%;
+  margin-top: 0.4rem;
+  padding: 6px 8px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 0.9rem;
+}
+
+/* Apply button */
+.apply-btn {
+  display: block;
+  width: 100%;
+  padding: 10px 0;
+  background-color: #d4af37;
+  color: #fff;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 1rem;
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.apply-btn:hover {
+  background-color: #b8962f;
+  transform: translateY(-2px);
+}

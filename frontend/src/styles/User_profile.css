@@ -1,0 +1,227 @@
+/* ===========================
+   Main Heading
+=========================== */
+.main-heading-user-profile {
+  text-align: center;
+  margin: 2rem 0;
+}
+
+.main-heading-user-profile h1 span {
+  color: skyblue;
+}
+
+/* ===========================
+   Profile Container
+=========================== */
+.user-profile-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 2rem;
+}
+
+/* ===========================
+   Personal Details
+=========================== */
+.personal-details-container {
+  min-height: 100vh;
+  width: 1000px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-right: 1px solid #ddd;
+  padding: 2rem 1rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Profile Picture */
+.picture-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.6rem;
+  margin-bottom: 2rem;
+}
+
+.picture-container img {
+  border: 2px solid #d4af37;
+  border-radius: 50%;
+  height: 250px;
+  width: 250px;
+  object-fit: cover;
+}
+
+.picture-container button {
+  width: 100px;
+  background-color: #d4af37;
+  border: none;
+  padding: 0.5rem;
+  cursor: pointer;
+  border-radius: 4px;
+  color: white;
+  transition: 0.3s ease;
+}
+
+.picture-container button:hover {
+  background-color: #f0c14b;
+  color: black;
+}
+
+/* Details */
+.details-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.detail-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.6rem 1rem;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  transition: background 0.3s ease;
+}
+
+.detail-row:hover {
+  background-color: #f0f0f0;
+}
+
+.detail-label {
+  font-weight: 600;
+  color: #555;
+}
+
+.detail-value {
+  color: #333;
+  margin-left: 0.5rem;
+  flex: 1;
+  text-align: left;
+}
+
+.detail-row button {
+  padding: 0.4rem 0.8rem;
+  border-radius: 5px;
+  border: none;
+  background-color: #d4af37;
+  color: white;
+  cursor: pointer;
+  font-weight: 500;
+  transition: 0.3s ease;
+}
+
+.detail-row button:hover {
+  background-color: #f0c14b;
+  color: black;
+}
+
+/* ===========================
+   Bookings & Wishlist
+=========================== */
+.bookings-wishlist-container {
+  flex-basis: 60%;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+/* Containers */
+.wishlist-container,
+.bookings-container {
+  background-color: #f5f5f5;
+  border-radius: 10px;
+  padding: 1rem 1.5rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  width: 90vw;
+}
+
+.wishlist-container h2,
+.bookings-container h2 {
+  text-align: center;
+  margin-bottom: 1rem;
+  color: #d4af37;
+}
+
+/* Blog items inside */
+.wishlist-blogs,
+.bookings-blogs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.wishlist-edit-container {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 8rem;
+}
+.remove-wishilist-container button {
+  background-color: #d4af37;
+}
+
+/* Overlay background */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.7); /* black with opacity */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000; /* above everything else */
+}
+
+/* Modal form container */
+.modal-content {
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 10px;
+  width: 400px;
+  max-width: 90%;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+}
+
+/* Form fields inside modal */
+.modal-content form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.modal-content input,
+.modal-content select,
+.modal-content button {
+  padding: 0.6rem;
+  font-size: 1rem;
+}
+
+.modal-content button[type="submit"] {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.modal-content button[type="button"] {
+  background-color: #ccc;
+  color: black;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.wishlist-edit-container {
+  display: flex;
+}
