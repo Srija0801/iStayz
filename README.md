@@ -44,29 +44,6 @@ Chatbot for any queries regarding payments,bookings and accounts.
 
 ---
 
-## 📁 Project Structure
-
-HRS/
-│
-├── frontend/
-│ ├── src/
-│ ├── public/
-│ ├── package.json
-│ └── .gitignore
-│
-├── backend/
-│ ├── src/
-│ ├── routes/
-│ ├── controllers/
-│ ├── models/
-│ ├── package.json
-│ └── .gitignore
-│
-├── .gitignore
-└── README.md
-
-
----
 
 ## ⚙️ Installation & Setup
 
