@@ -7,7 +7,7 @@ HRS (Hotel Reservation System) is a full-stack web application that allows users
 
 This project is built using the MERN stack and follows best practices for backend security, frontend structure, and version control.
 
----
+
 
 ## Features
 
@@ -20,9 +20,9 @@ Users can search and apply coupons while booking.
 Authorized users can review to the website and admin can manage the reviews.
 Chatbot for any queries regarding payments,bookings and accounts.
 
----
 
-## 🛠 Tech Stack
+
+##  Tech Stack
 
 ### Frontend
 - React.js
@@ -42,30 +42,29 @@ Chatbot for any queries regarding payments,bookings and accounts.
 - Postman (API testing)
 - dotenv
 
----
 
 
-## ⚙️ Installation & Setup
+## Installation & Setup
 
-### 1️⃣ Clone the Repository
+### 1.Clone the Repository
 ```bash
 git clone https://github.com/yourusername/HRS.git
 cd HRS
-2️⃣ Backend Setup
+2. Backend Setup
 cd backend
 npm install
 
 Start the backend server:
 
 npm start
-3️⃣ Frontend Setup
+3. Frontend Setup
 cd ../frontend
 npm install
 npm start
 The frontend will run on:
 
 http://localhost:3000
-🔐 Environment Variables
+Environment Variables
 This project uses environment variables to protect sensitive data.
 
  Future Enhancements
